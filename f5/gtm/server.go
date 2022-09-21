@@ -71,21 +71,21 @@ type ServerVirtualServersList struct {
 
 // ServerVirtualServers holds the configuration of a single ServerVirtualServers.
 type ServerVirtualServers struct {
-	LimitMaxPpsStatus        string `json:"limitMaxPpsStatus,omitempty"`
-	Kind                     string `json:"kind,omitempty"`
-	LimitMaxBps              int    `json:"limitMaxBps,omitempty"`
-	Destination              string `json:"destination,omitempty"`
-	LimitMaxConnections      string `json:"limitMaxConnections,omitempty"`
-	Enabled                  bool   `json:"enabled,omitempty"`
-	SelfLink                 string `json:"selfLink,omitempty"`
-	LimitMaxConnectionStatus string `json:"limitMaxConnectionStatus,omitempty"`
-	TranslationPort          int    `json:"translationPort,omitempty"`
-	FullPath                 string `json:"fullPath,omitempty"`
-	LimitMaxPps              int    `json:"limitMaxPps,omitempty"`
-	Generation               int    `json:"generation,omitempty"`
-	LimitMaxBpsStatus        string `json:"limitMaxBpsStatus,omitempty"`
-	TranslationAddress       string `json:"translationAddress,omitempty"`
-	Name                     string `json:"name,omitempty"`
+	LimitMaxBps               int    `json:"limitMaxBps"`
+	TranslationAddress        string `json:"translationAddress"`
+	Destination               string `json:"destination"`
+	Enabled                   bool   `json:"enabled"`
+	LimitMaxConnectionsStatus string `json:"limitMaxConnectionsStatus"`
+	LimitMaxPpsStatus         string `json:"limitMaxPpsStatus"`
+	Name                      string `json:"name"`
+	LimitMaxBpsStatus         string `json:"limitMaxBpsStatus"`
+	LimitMaxConnections       int    `json:"limitMaxConnections"`
+	Kind                      string `json:"kind"`
+	FullPath                  string `json:"fullPath"`
+	LimitMaxPps               int    `json:"limitMaxPps"`
+	TranslationPort           int    `json:"translationPort"`
+	Generation                int    `json:"generation"`
+	SelfLink                  string `json:"selfLink"`
 }
 
 // ServerVirtualServersEndpoint represents the REST resource for managing ServerVirtualServers.
